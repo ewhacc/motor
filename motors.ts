@@ -1,3 +1,10 @@
+enum MoDir {
+    //% block="반시계방향"
+    CCW, 
+    //% block="시계방향"
+    CW 
+}
+
 //% color="#00A074" weight=88 icon="\uf021"  block="서보모터"
 
 namespace cck {
@@ -55,14 +62,6 @@ namespace cck {
                 this.stop();
             else
                 this.setAngle(degrees);
-        }
-
-
-        enum MoDir {
-            //% block="반시계방향"
-            CCW, 
-            //% block="시계방향"
-            CW 
         }
 
         //% blockId=servoservorunf block="연속모터 %servo %dir 돌리기"
